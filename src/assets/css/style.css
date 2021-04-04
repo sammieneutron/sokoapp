@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+    color: #b1b1b1;
+    font-family: 'Mulish', sans-serif;
+    overflow-x: hidden !important;
+}
+
+.top-nav {
+    background-color: #2766CC;
+    padding: 0.8rem 10rem 1px;
+    margin: auto;
+    color: #F8FAFD;
+}
+
+.middle-nav {
+    background-color: transparent;
+    border-bottom: 1px solid #ccc;
+    padding: 1.5rem 10rem;
+}
+
+.logo-text {
+    font-weight: 800;
+    color: #2e2e2e;
+}
+
+small {
+    color: #949494;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.nav-texts a { 
+    color: #696969;
+    margin-left: 4rem;
+    font-weight: 700;
+    word-spacing: 10px;
+    display: inline;
+}
+
+.footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #fff;
+}
+
+.footer h5 {
+    color: #2e2e2e;
+    font-weight: 800;
+}
+
+.def-padding {
+    padding: 2rem 10rem;
+}
+
+.mid-padding {
+    padding: 2rem 1.3rem;
+}
+
+.mid-padding h5 {
+    color: #2e2e2e;
+    font-weight: 700;
+}
+
+.border-right {
+    border-right: 1px solid #ccc;
+}
+
+.border-left {
+    border-left: 1px solid #ccc;
+}
+
+.form-input {
+    background-color: #F0F0F0;
+    border: transparent;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.form-position {
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 3%;
+}
+
+::placeholder {
+    color: #AFAFAF;
+}
+
+.btn-search {
+    float: right;
+    position: relative;
+    top: 0;
+    right: 0;
+    background-color: #F8DE4B;
+    color: #fff;
+    margin-top: -20px;
+    margin-right: 10px;
+    padding: 6px 10px;
+    border-radius: 0 5px 5px 0;
+    font-weight: bold;
+}
+
+.features {
+    background-color: #2766CC;
+    padding: 3rem 0 2rem;
+}
+
+.features p {
+    color: #F8FAFD;
+}
+
+.badge-primary {
+    background-color: #2766CC;
+}   
+
+.bag-item h6 {
+    color: #2e2e2e;
+}
+
+@media(max-width: 768px) {
+    .top-nav {
+        padding: 0.6rem 2rem 1px;
+    }
+
+    .middle-nav {
+        padding: 1rem 2rem;
+    }
+
+    .nav-texts a { 
+        margin-left: 2rem;
+        display: inline;
+    }
+
+    a.nav-link {
+        display: inline;
+    }
+
+    .def-padding {
+        padding: 2rem 2rem;
+    }
+
+    .form-position {
+        position: absolute;
+        /* margin-top: -20px; */
+        margin-left: 1%;
+    }
+}
+
+.top-nav > span {
+    font-weight: 900;
+}
