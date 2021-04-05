@@ -31,3 +31,28 @@ export const dateFormat = (myDate) => {
 export const formatNumber = (num) => {
     return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
 }
+
+export const calculateDiscount = (price, discount) => {
+    // props.discount ? (props.price / 100) * props.discount : props.price
+
+    if (discount > 0) {
+        discount = (price / 100) * discount;
+        return price - discount;
+    } else {
+        return price
+    }
+}
+
+export const increment = (count) => {
+    if(count > 0) {
+        count = count += 1;
+        return count;
+    }
+}
+
+export const decrement = (count) => {
+    if(count > 0) {
+        count = count -= 1;
+        return count;
+    }
+}

@@ -9,7 +9,7 @@ const Topnav = () => {
     return (
         <div>
             <div className="top-nav">
-                <p className="align-middle">Store made with <span className="title">Soko</span></p>
+                <p className="align-middle">Store made with <span className="">Soko</span></p>
             </div>
             <Navbar collapseOnSelect expand="lg" className="middle-nav">
                 <Navbar.Brand>                    
@@ -26,7 +26,11 @@ const Topnav = () => {
                 </Navbar.Brand>
                 
                 <div className="ml-auto nav-texts">
-                    <Link to="/bag"><ShoppingCart size="20"/><span className="ml-2">Bag</span></Link>
+                    <Link to="/bag">
+                        <ShoppingCart size="20"/>
+                        <span className="ml-2">Bag</span>
+                        <span class="ml-2 badge badge-pill badge-danger">0</span>
+                    </Link>
                     <Link to="/account"><User size="20"/><span className="ml-2">Account</span></Link>
                 </div>
             </Navbar>

@@ -3,7 +3,7 @@ import meh from '../../assets/images/meh.svg'
 
 
 
-const Bag = () => {
+const BagSnip = () => {
     return (
         <div className="mid-padding bag">
             <div className="heading">
@@ -19,4 +19,4 @@ const Bag = () => {
     )
 }
 
-export default Bag
+export default BagSnip

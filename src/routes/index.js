@@ -2,7 +2,10 @@ import React from 'react'
 import { BrowserRouter as Router,  Route, Switch } from 'react-router-dom';
 
 import Home from '../components/Home'
-import Bag from '../components/snippets/Bag'
+import ProductDetails from '../components/ProductDetails';
+import Bag from '../components/Bag'
+import OrderSuccess from '../components/OrderSuccess';
+import TrackOrder from '../components/TrackOrder';
 
 
 
@@ -12,6 +15,9 @@ const Routes = (props) => {
             <Switch>
                 <Route exact path="/" component={ Home } />
                 <Route path="/bag" component={ Bag } />
+                <Route path="/order-success" component={ OrderSuccess } />
+                <Route path="/track-order" component={ TrackOrder } />
+                <Route path="/product-details/:id" component={ ProductDetails } />
             </Switch>
         </Router>
     )

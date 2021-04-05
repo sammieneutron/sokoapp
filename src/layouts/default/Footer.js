@@ -1,7 +1,7 @@
 import React from 'react'
 // import { Link, Route } from 'react-router-dom'
 import { Button } from 'react-bootstrap'
-import { Icon, InlineIcon } from '@iconify/react';
+import { Icon } from '@iconify/react';
 import whatsappIcon from '@iconify/icons-mdi/whatsapp';
 
 const Footer = () => {

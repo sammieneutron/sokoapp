@@ -11,7 +11,6 @@ const DefaultLayout = ( {children} ) => {
         <div>
             <Topnav/>
                 <div>{children}</div>
-            <Footer/>
         </div>
     )
 }
