@@ -1,7 +1,8 @@
 import React from 'react'
 // import { Link, Route } from 'react-router-dom'
 import { Button } from 'react-bootstrap'
-import { Facebook } from 'react-feather'
+import { Icon, InlineIcon } from '@iconify/react';
+import whatsappIcon from '@iconify/icons-mdi/whatsapp';
 
 const Footer = () => {
     return (
@@ -12,8 +13,8 @@ const Footer = () => {
                 <small>Cham Towers, Plot 12 Nkruma Rd, Kampala, Ug</small>
                 <div className="mt-4">
                     <Button variant="success">
-                        <Facebook size="24"/>
-                        Chat with us
+                        <Icon icon={whatsappIcon} style={{fontSize: '22px'}} />
+                        &nbsp;Chat with us
                     </Button>
                 </div>
             </div>
