@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Route } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { Navbar, Row, Col } from 'react-bootstrap'
 
 import storelogo from '../../assets/images/store-logo.svg'

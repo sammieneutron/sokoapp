@@ -17,10 +17,10 @@ const Home = () => {
         <DefaultLayout>
             <div>
                 <Row>
-                    <Col md={3} className="border-right">
+                    <Col md={4} className="border-right">
                         <Categories/>
                     </Col>
-                    <Col md={6}>
+                    <Col md={5}>
                         <SearchProduct/>
                         <ProductList/>
                     </Col>
