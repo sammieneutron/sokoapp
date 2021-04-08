@@ -2,9 +2,7 @@ import React from 'react'
 import success from '../assets/images/success.svg'
 import DefaultLayout from '../layouts/default'
 import {Link} from 'react-router-dom'
-import {Button, Row, Col} from 'react-bootstrap'
-
-
+import {Button, Row} from 'react-bootstrap'
 
 const OrderSuccess = () => {
     return (
@@ -22,14 +20,14 @@ const OrderSuccess = () => {
                 
                 <div className="text-center mt-5">
 
-                    <Row className="text-center">
+                    <Row className="text-center justify-center">
                         {/* <div style={{margin: "0 auto"}}> */}
-                            <Col className="mr-3">
+                            <div className="mr-3">
                                 <Button className="add-to-bag"><Link to="/track-order">Track Order</Link></Button>
-                            </Col>
-                            <Col>
+                            </div>
+                            <div>
                                 <Button className="buy-now"><Link to="/">Continue Shopping</Link></Button>
-                            </Col>
+                            </div>
                         {/* </div> */}
                         
                     </Row>                    

@@ -1,15 +1,31 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 
 import { Plus, Minus } from 'react-feather'
+import { AppContext } from '../../services/AppContext';
 
 
-const ProductCounter = () => {
+const ProductCounter = (props) => {
 
     const [productCount, setProductCount] = useState(1);
+    const { dispatch } = useContext(AppContext);
 
     const increment = (count) => {
         if(count > 0) {
             count = count += 1;
+
+            const bag = {
+                id: props.id,
+                name: props.name,
+                price: props.price,
+                discount: props.discount,
+                info: props.info,
+            }
+
+            dispatch({
+                type: 'INCREASE_ITEM',
+                payload: bag,
+            })
+
             return setProductCount(count);
         }
     }
@@ -17,25 +33,34 @@ const ProductCounter = () => {
     const decrement = (count) => {
         if(count > 0) {
             count = count -= 1;
+
+            const bag = {
+                id: props.id,
+                name: props.name,
+                price: props.price,
+                discount: props.discount,
+                info: props.info,
+            }
+
+            dispatch({
+                type: 'DECREASE_ITEM',
+                payload: bag,
+            })
             return setProductCount(count);
         }
     }
 
-    // const handleChange = (e) => {
-    //     console.log(e.target.value);
-    // }
-
     return (
-        <div class="form-group mt-4">
+        <div className="form-group mt-4">
             <div className="input-group counter-div">
-                <div class="input-group-btn minus">
-                    <button id="down" class="btn btn-sm btn-default" onClick={() => decrement(productCount)}>
+                <div className="input-group-btn minus">
+                    <button id="down" className="btn btn-sm btn-default" onClick={() => decrement(productCount)}>
                         <Minus size="15" />
                     </button>
                 </div>
                 <input type="text" id="myNumber" class="form-control-sm no-border" style={{width: "30px"}} value={productCount} onChange={e => setProductCount(e.target.value)} />
-                <div class="input-group-btn plus">
-                    <button id="up" class="btn btn-sm btn-default"  onClick={() => increment(productCount)}>
+                <div className="input-group-btn plus">
+                    <button id="up" className="btn btn-sm btn-default"  onClick={() => increment(productCount)}>
                         <Plus size="15" />
                     </button>
                 </div>

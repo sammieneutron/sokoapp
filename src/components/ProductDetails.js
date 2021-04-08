@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useLocation } from 'react-router-dom'
 import DefaultLayout from '../layouts/default'
 import Features from './snippets/Features'
@@ -9,19 +9,14 @@ import ProductCounter from './snippets/ProductCounter'
 import PurchaseButtons from './snippets/PurchaseButtons'
 import RelatedProducts from './snippets/RelatedProducts'
 import Breadcrumb from './snippets/Breadcrumb'
+import { AppContext } from '../services/AppContext'
 
 const ProductDetails = () => {
 
-    const location = useLocation();
-    console.log(location.state);
+    const { products } = useContext(AppContext);
 
-    const product = { 
-        id: 1, 
-        name: "Kid's 2pk Cloth Face masks", 
-        price: 185000, 
-        discount: 20, 
-        info: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old." 
-    };
+    const location = useLocation();
+    const id = location.state.id - 1;
 
     return (
         <DefaultLayout>
@@ -29,14 +24,14 @@ const ProductDetails = () => {
                 <Breadcrumb/>
                 <Row className="">
                     <Col md={4} xs={12}>
-                        <img src={facemask} className="img-fluid product-image2" alt={product.name} />
+                        <img src={facemask} className="img-fluid product-image2" alt={products[id].name} />
                     </Col>
                     <Col sm={8} xs={12}>
                         <div className="m-top-3">
-                            <p className="product-name">{product.name}</p>
-                            <p className="product-info">{product.info}</p>
-                            <p className="product-price2">UGX {formatNumber(calculateDiscount(product.price, product.discount))} <span className="ml-5 badge badge-danger badge-sm">-{product.discount}%</span></p>
-                            <p className="product-price">{formatNumber(product.discount ? "UGX " + product.price : "")}</p>
+                            <p className="product-name">{products[id].name}</p>
+                            <p className="product-info">{products[id].info}</p>
+                            <p className="product-price2">UGX {formatNumber(calculateDiscount(products[id].price, products[id].discount))} <span className="ml-5 badge badge-danger badge-sm">-{products[id].discount}%</span></p>
+                            <p className="product-price">{formatNumber(products[id].discount ? "UGX " + products[id].price : "")}</p>
 
                             <ProductCounter />
                             <PurchaseButtons />

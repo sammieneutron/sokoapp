@@ -33,8 +33,6 @@ export const formatNumber = (num) => {
 }
 
 export const calculateDiscount = (price, discount) => {
-    // props.discount ? (props.price / 100) * props.discount : props.price
-
     if (discount > 0) {
         discount = (price / 100) * discount;
         return price - discount;

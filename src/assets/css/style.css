@@ -57,12 +57,27 @@ small {
     padding: 2rem 8rem;
 }
 
+.def-padding3 {
+    padding: 2rem 8rem 0 2rem;
+}
+
+.def-padding4 {
+    padding: 2rem 12rem;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #ccc;
+}
 .br-5 {
     border-radius: 5px;
 }
 
 .mid-padding {
     padding: 2rem 1.3rem;
+}
+
+.mid-padding2 {
+    padding: 1rem 0 0 2rem;
 }
 
 .mid-padding h5 {
@@ -134,7 +149,15 @@ ul.category-items > li {
     font-size: 16px;
     font-weight: 500;
     color: #3b3b3b;
-    line-height: 2.4rem;
+    line-height: 3rem;
+    text-indent: -40px;
+}
+
+ul.category-items > a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #3b3b3b;
+    line-height: 2.5rem;
     text-indent: -40px;
 }
 
@@ -157,6 +180,19 @@ ul.category-items > li {
     color: #2e2e2e !important;
     font-size: 20px !important;
     font-weight: 600;
+    background-color: transparent !important;
+}
+
+.orders {
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    padding: 1rem; 
+    margin: 0.7rem
+}
+
+.orders .store-name {
+    font-size: 17px;
+    font-weight: 800;
 }
 
 .no-border {
@@ -205,6 +241,81 @@ p.product-name {
     color: #3b3b3b;
     text-align: left !important;
 }
+
+.bag-items {
+    padding: 0 0;
+}
+
+.bag-items .product-name {
+    font-weight: 600;
+    font-size: 14px;
+    color: #696969;
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+
+.bag-items .per-piece {
+    color: rgb(172, 172, 172);
+    font-size: 12px;
+    /* margin-top: -100px !important; */
+} 
+
+.bag-items .product-price2 {
+
+    color: #696969;
+    font-size: 14px;
+    /* margin-top: 5px; */
+}
+
+.bag-items .product-price {
+    font-size: 12px;
+    /* margin-top: -18px; */
+    text-decoration: line-through;
+    color: #929292;
+}
+
+.center {
+    margin-top: -35px !important;
+    display: flex;
+    align-items: center;
+    /* height: 30px; */
+}
+
+.subtotal {
+    margin-top: 20px;
+    color: #696969;
+    font-size: 14px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.order-detail {
+    margin-top: 20px;
+    color: #696969;
+    font-size: 14px;
+}
+
+.total {
+    padding: 15px 0;
+    border-bottom: 1px dashed #ccc;
+}
+
+.total p {
+    font-weight: 800;
+    color: #3b3b3b;
+}
+
+.total small {
+    font-size: 12px;
+    font-style: italic;
+    position: absolute;
+    font-weight: 400;
+    margin-top: -15px !important;
+}
+.subtotal p {
+    color: #696969;
+    font-size: 14px;
+}
+
 .title {
     font-weight: 600;
     color: #929292;
@@ -230,7 +341,7 @@ p.product-discounted-price {
 }
 
 p.product-price {
-    font-size: 13px;
+    font-size: 12px;
     margin-top: -18px;
     text-decoration: line-through;
     color: #929292;
@@ -252,19 +363,24 @@ a {
 
 .counter-div {
     border: 2px solid #2766CC;
-    width: 100px; 
+    width: 94px; 
     border-radius: 5px;
-    /* height: 30px; */
+    margin-top: 50px;
+    height: 35px;
 }
 
 .counter-div .minus {
     background-color: #E9EFF9; 
     border-radius: 5px 0 0 5px;
+    height: 30px;
+    width: 30px;
 }
 
 .counter-div .plus {
     background-color: #E9EFF9; 
     border-radius: 0 5px 5px 0;
+    height: 30px;
+    width: 30px;
 }
 
 .purchase-buttons {
@@ -280,6 +396,11 @@ a {
     font-weight: 600;
 }
 
+.add-to-bag:hover {
+    background-color: #2766CC;
+    color: #fff !important;
+}
+
 .buy-now {
     background-color: #F8DE4B;
     color: #2766CC;
@@ -287,6 +408,299 @@ a {
     border: 2px solid #F8DE4B;
     font-weight: 600;
 }
+
+.buy-now:hover {
+    background-color: #F8DE4B;
+    color: #2766CC;
+    border: 2px solid #F8DE4B;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+
+
+.btn-outline-secondary2 {
+    color: #6c757d;
+    border-color: #ced4da;
+    border-right-color: #fff;
+}
+
+.add-delivery {
+    padding: 3rem 2rem !important;
+    width: 220px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.delivery-address {
+    padding: 1rem 1rem 0 1rem !important;
+    width: 220px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type=radio] {
+    background-color: #2766CC !important;
+}
+
+.order-details {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.account {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.product-color {
+    margin-top: 8px;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.order-status-shipped {
+    margin-top: 5px;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(255, 136, 0);
+}
+
+.order-status-delivered {
+    margin-top: 5px;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #2766CC;
+}
+/* .order-radio {
+    
+} */
+
+.delivery-address h5 {
+    font-size: 15px !important;
+}
+
+.delivery-address .address {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.delivery-address .phone {
+    font-size: 13px;
+    font-weight: 700;
+    color: #585858;
+}
+
+.delivery-details h5 {
+    font-size: 15px !important;
+    font-weight: 600;
+}
+
+.delivery-details .address {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.delivery-details .phone {
+    font-size: 13px;
+    font-weight: 700;
+    color: #585858;
+}
+
+section {
+    min-height: 100vh;
+    padding-top: 50px;
+  }
+  @media (max-width: 768px) {
+    section {
+      padding-top: 10px;
+    }
+  }
+  
+  ::-moz-selection {
+    background: #fcfcfc;
+    background: rgba(224, 224, 224, 0.2);
+    text-shadow: none;
+  }
+  
+  ::selection {
+    background: #fcfcfc;
+    background: rgba(224, 224, 224, 0.2);
+    text-shadow: none;
+  }
+  
+  img::-moz-selection {
+    background: transparent;
+  }
+  
+  img::selection {
+    background: transparent;
+  }
+  
+  img::-moz-selection {
+    background: transparent;
+  }
+  
+  .shadow-nohover {
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  @-webkit-keyframes animatop {
+    0% {
+      opacity: 0;
+      bottom: -500px;
+    }
+    100% {
+      opacity: 1;
+      bottom: 0px;
+    }
+  }
+  
+  @keyframes animatop {
+    0% {
+      opacity: 0;
+      bottom: -500px;
+    }
+    100% {
+      opacity: 1;
+      bottom: 0px;
+    }
+  }
+  @-webkit-keyframes rotatemagic {
+    0% {
+      opacity: 0;
+      transform: rotate(0deg);
+      top: -24px;
+      left: -253px;
+    }
+    100% {
+      transform: rotate(-30deg);
+      top: -24px;
+      left: -78px;
+    }
+  }
+  @keyframes rotatemagic {
+    0% {
+      opacity: 0;
+      transform: rotate(0deg);
+      top: -24px;
+      left: -253px;
+    }
+    100% {
+      transform: rotate(-30deg);
+      top: -24px;
+      left: -78px;
+    }
+  }
+  h3 {
+    margin: 20px 0;
+  }
+  
+  .experience {
+    border-left: 1px solid #ccc;
+    padding: 0 30px;
+  }
+  @media (max-width: 767px) {
+    .experience {
+      margin-left: 0;
+      padding-right: 0;
+    }
+  }
+  .experience .item {
+    position: relative;
+    margin-bottom: 40px;
+  }
+  .experience .item::before {
+    content: "";
+    position: absolute;
+    left: -48px;
+    top: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid #ccc;
+  }
+
+  .experience .item::before .active {
+    content: "";
+    position: absolute;
+    left: -48px;
+    top: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #2766CC;
+    border: 1px solid #ccc;
+  }
+  .experience .item::after {
+    content: "";
+    position: absolute;
+    left: -37px;
+    top: 6px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+  .experience h5 {
+    color: #3b3b3b;
+    font-size: 17px;
+    font-weight: 600;
+  }
+
+  .experience p {
+      font-size: 15px;
+      color: #929292;
+      /* font-weight: ; */
+  }
+  .experience .location {
+    position: absolute;
+    right: 0;
+    top: 2px;
+  }
+
+  .experience .login-btn {
+    padding: 0.37rem 2.5rem;
+  }
+
+  .experience .location .fa {
+    margin-right: 8px;
+  }
+  .experience .job-info {
+    position: absolute;
+    left: -185px;
+    top: 0;
+  }
+  .experience .job-info .title {
+    color: #009688;
+  }
+  @media (max-width: 767px) {
+    .experience .job-info {
+      position: static;
+      margin-bottom: 1rem;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
 /* 
 .related-item {
     box-sizing: content-box;
@@ -347,6 +761,14 @@ a {
     }
     
     .def-padding2 {
+        padding: 2rem 2rem;
+    }
+
+    .def-padding3 {
+        padding: 2rem 2rem;
+    }
+
+    .def-padding4 {
         padding: 2rem 2rem;
     }
 

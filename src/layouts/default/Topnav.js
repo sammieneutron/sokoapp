@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { Navbar, Row, Col } from 'react-bootstrap'
 
 import storelogo from '../../assets/images/store-logo.svg'
 import {  ShoppingCart, User } from 'react-feather'
 
+import { AppContext } from '../../services/AppContext'
+
 const Topnav = () => {
+    const { itemsInBag } = useContext(AppContext);
+
     return (
         <div>
             <div className="top-nav">
@@ -29,7 +33,7 @@ const Topnav = () => {
                     <Link to="/bag">
                         <ShoppingCart size="20"/>
                         <span className="ml-2">Bag</span>
-                        <span class="ml-2 badge badge-pill badge-danger">0</span>
+                        <span class="ml-2 badge badge-pill badge-danger">{itemsInBag}</span>
                     </Link>
                     <Link to="/account"><User size="20"/><span className="ml-2">Account</span></Link>
                 </div>

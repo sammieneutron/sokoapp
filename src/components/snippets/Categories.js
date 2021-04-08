@@ -23,8 +23,6 @@ const Categories = () => {
             </ul>
             <Link to="/" className="view-all-cat">View all categories &nbsp;&nbsp;<ChevronRight /></Link>
         </div>
-
-
     )
 }
 
