@@ -6,7 +6,6 @@ const VerifyNumber = (props) => {
         <div>
             <Modal
                 {...props}
-                size="lg"
                 aria-labelledby="contained-modal-title-vcenter"
                 centered
                 size="md"

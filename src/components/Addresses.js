@@ -1,8 +1,8 @@
 import React from 'react'
 import Account from './Account'
 import AddAddress from './snippets/AddAddress'
-import {Button, Col, Row} from 'react-bootstrap'
-import {Filter} from 'react-feather'
+import { Col, Row} from 'react-bootstrap'
+// import {Filter} from 'react-feather'
 
 const Addresses = () => {
     return (

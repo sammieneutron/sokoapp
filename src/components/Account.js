@@ -4,8 +4,6 @@ import {Link} from 'react-router-dom'
 import {Button, Row, Col} from 'react-bootstrap'
 import {ChevronLeft} from 'react-feather'
 import AccountSidebar from './snippets/AccountSidebar'
-import Orders from './Orders'
-import AddAddress from './snippets/AddAddress'
 
 
 const Account = ({children}) => {
