@@ -34,6 +34,7 @@ const AppReducer = (state, action) => {
 let initialState = {
     itemsInBag: 0,
     bag: [],
+    user: [],
     products: [
         { id: 1, name: "Kid's 2pk Cloth Face masks", categoryID: 7, price: 185000, discount: 0, info: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old." },
         { id: 2, name: "Norbury Scandinavian Wood Leg Ottoman", categoryID: 7, price: 148000, discount: 20, info: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old." },
@@ -62,6 +63,7 @@ export const AppProvider = (props) => {
             value={{
                 itemsInBag: state.itemsInBag,
                 bag: state.bag,
+                user: state.user,
                 products: state.products,
                 categoryItems: state.categoryItems,
                 dispatch,

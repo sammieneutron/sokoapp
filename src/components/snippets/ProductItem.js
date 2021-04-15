@@ -12,7 +12,9 @@ const ProductItem = (props) => {
 
     const addTobag = () => {
         
-        const bag = {
+        let count = 1;
+
+        const item = {
             id: props.id,
             name: props.name,
             price: props.price,
@@ -20,11 +22,27 @@ const ProductItem = (props) => {
             info: props.info,
         }
 
+        // bag.map((it, index) => {
+        //     if (!(item.id in bag[index])) {
+        //         dispatch({
+        //             type: 'ADD_TO_BAG',
+        //             payload: item,
+        //         })
+        //     } else {
+        //         bag[index].count = count + 1;
+
+        //         // dispatch({
+        //         //     type: 'ADD_TO_BAG',
+        //         //     payload: 
+        //         // })
+        //     }
+        // })     
+        
         dispatch({
             type: 'ADD_TO_BAG',
-            payload: bag,
+            payload: item,
         })
-
+        
     }
 
     console.log(bag);

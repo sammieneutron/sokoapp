@@ -7,24 +7,24 @@ import { AppContext } from '../../services/AppContext';
 const ProductCounter = (props) => {
 
     const [productCount, setProductCount] = useState(1);
-    const { dispatch } = useContext(AppContext);
+    const { dispatch, bag } = useContext(AppContext);
 
     const increment = (count) => {
-        if(count > 0) {
+        if(count >= 0) {
             count = count += 1;
 
-            const bag = {
-                id: props.id,
-                name: props.name,
-                price: props.price,
-                discount: props.discount,
-                info: props.info,
-            }
+            // const bag = {
+            //     id: props.id,
+            //     name: props.name,
+            //     price: props.price,
+            //     discount: props.discount,
+            //     info: props.info,
+            // }
 
-            dispatch({
-                type: 'INCREASE_ITEM',
-                payload: bag,
-            })
+            // dispatch({
+            //     type: 'INCREASE_ITEM',
+            //     payload: bag,
+            // })
 
             return setProductCount(count);
         }
@@ -34,18 +34,14 @@ const ProductCounter = (props) => {
         if(count > 0) {
             count = count -= 1;
 
-            const bag = {
-                id: props.id,
-                name: props.name,
-                price: props.price,
-                discount: props.discount,
-                info: props.info,
-            }
+            // const bag = {
+            //     id: props.id,
+            // }
 
-            dispatch({
-                type: 'DECREASE_ITEM',
-                payload: bag,
-            })
+            // dispatch({
+            //     type: 'DECREASE_ITEM',
+            //     payload: bag,
+            // })
             return setProductCount(count);
         }
     }

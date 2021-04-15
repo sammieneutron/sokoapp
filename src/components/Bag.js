@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useContext} from 'react'
 import DefaultLayout from '../layouts/default'
 import BagSnip from './snippets/BagSnip'
 import { Col, Row, Form, Button, FormControl, Dropdown, DropdownButton, InputGroup } from 'react-bootstrap'
@@ -6,9 +6,11 @@ import AddAddress from './snippets/AddAddress'
 import VerifyNumber from './snippets/VerifyNumber'
 import {Link} from 'react-router-dom'
 
+import {AppContext} from '../services/AppContext'
 
 const Bag = () => {
     const [modalShow, setModalShow] = useState(false);
+    const {bag} = useContext(AppContext);
 
     return (
         <DefaultLayout>
@@ -16,6 +18,15 @@ const Bag = () => {
                 show={modalShow}
                 onHide={() => setModalShow(false)}
             />
+
+            { !bag.length ? 
+            <div>
+                <BagSnip/> 
+                <div className="text-center">
+                    <Button className="buy-now"><Link to="/">Shop Now</Link></Button>
+                </div>
+            </div> : 
+            
             <Row>
                 <Col md={8} className="def-padding2">
                     <div class="experience">
@@ -80,6 +91,9 @@ const Bag = () => {
                     <BagSnip/>
                 </Col>
             </Row>
+            
+            }
+            
         </DefaultLayout>
 
     )

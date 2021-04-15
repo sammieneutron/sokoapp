@@ -9,7 +9,7 @@ import ProductCounter from './ProductCounter'
 
 
 const BagSnip = () => {
-    const { dispatch, bag } = useContext(AppContext);
+    const { dispatch, bag, itemsInBag } = useContext(AppContext);
 
     const subTotalPrice = bag.reduce((subtotal, item) => {
 		return (subtotal += calculateDiscount(item.price, item.discount));
@@ -34,8 +34,8 @@ const BagSnip = () => {
     return (
         <div className="mid-padding bag">
             <div className="heading">
-                <h5>Bag &nbsp;&nbsp;<span className="badge badge-md badge-primary">{bag.length}</span> 
-                    <span>{ bag.length ? <span className="pull-right" style={{cursor: "pointer", textDecoration: "underline"}} onClick={clearBag}><small>Clear Bag</small></span> : "" }</span>
+                <h5>Bag &nbsp;&nbsp;<span className="badge badge-md badge-primary">{itemsInBag}</span> 
+                    <span>{ itemsInBag ? <span className="pull-right" style={{cursor: "pointer", textDecoration: "underline"}} onClick={clearBag}><small>Clear Bag</small></span> : "" }</span>
                 </h5>
                 
             </div>
