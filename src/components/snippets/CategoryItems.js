@@ -29,7 +29,7 @@ const CategoryItems = (props) => {
     
     return (
         <li className="">
-            {props.name} ({countProduct()})
+            {props.name} ({props.count})
         </li>
     )
 }

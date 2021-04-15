@@ -43,13 +43,13 @@ let initialState = {
         { id: 5, name: "Alternative Protein Ground - 16oz - Good & Gather", categoryID: 4, price: 8000, discount: 0, info: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old." },
     ],
     categoryItems: [
-		{ id: 1, name: 'Electronics' },
-		{ id: 2, name: 'Face Masks' },
-		{ id: 3, name: 'Fresh Foods' },
-		{ id: 4, name: 'Grocery' },
-		{ id: 5, name: 'Home' },
-		{ id: 6, name: 'Kids' },
-		{ id: 7, name: 'Fashion' },
+		{ id: 1, name: 'Electronics', count: 12 },
+		{ id: 2, name: 'Face Masks', count: 6 },
+		{ id: 3, name: 'Fresh Foods', count: 15 },
+		{ id: 4, name: 'Grocery', count: 3 },
+		{ id: 5, name: 'Home', count: 87 },
+		{ id: 6, name: 'Kids', count: 2 },
+		{ id: 7, name: 'Fashion', count: 0 },
 	],
 };
 
